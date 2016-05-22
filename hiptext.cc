@@ -142,7 +142,7 @@ void PrintImageXterm256Unicode(std::ostream& os, const Graphic& graphic) {
       int bottom256 = rgb_to_xterm256(bottom);
       out.SetForeground256(top256);
       out.SetBackground256(bottom256);
-      out << kUpperHalfBlock;
+      out << "▀";
     }
     out.Reset();
     out << "\n";
